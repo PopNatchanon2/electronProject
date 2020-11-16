@@ -1,0 +1,47 @@
+// out: style.css, compress: true, sourceMap: true,
+
+@import "../../css/style.less";
+
+.calculator {
+    background-color: steelblue;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    .calculator__monitor {
+        background-color: white;
+        height: 20px;
+        font-size: 18px;
+        text-align: right;
+        padding: 4px;
+        &#cal_monitor-main {
+            font-size: 28px;
+            height: 40px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-bottom: 4px;
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+        flex-flow: wrap-reverse;
+        > li:not(.none) {
+            cursor: pointer;
+            border: 1px solid black;
+            list-style: none;
+            background-color: #b1adb0;
+            text-align: center;
+            padding: 15px;
+        }
+        > li.none {
+            border: 1px solid black;
+            list-style: none;
+            background-color: #b1adb0;
+            text-align: center;
+            padding: 15px;
+        }
+    }
+}

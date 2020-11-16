@@ -1,0 +1,36 @@
+// out: style.css, compress: true, sourceMap: true,
+@import "../../css/style.less";
+
+ul {
+    > li {
+        .form-check-input,
+        .form-check-label {
+            cursor: pointer;
+        }
+    }
+    > li.done {
+        label {
+            text-decoration: line-through;
+        }
+        .form-check-input,
+        .form-check-label {
+            cursor: pointer;
+        }
+    }
+}
+
+.add-content {
+    margin-top: 16px;
+    i {
+        font-size: 36px !important;
+        cursor: pointer;
+    }
+}
+
+.list-content {
+    margin-top: 16px;
+    i {
+        font-size: 16px !important;
+        cursor: pointer;
+    }
+}

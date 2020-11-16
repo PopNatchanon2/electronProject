@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+a.path {
+  background-color: cadetblue;
+  color: white;
+  display: block;
+  margin: 15px;
+  text-align: center;
+}
+a.path:hover {
+  color: #c0c0c0;
+}
+body {
+  margin: 0px;
+  background-color: #ffd1d1;
+  overflow: hidden;
+}
+.controller {
+  position: absolute;
+  z-index: 1;
+}
+/*# sourceMappingURL=./style.css.map */

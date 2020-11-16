@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TodoApp</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script>require('popper.js');</script>
+        <script>require('bootstrap');</script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="bg-info">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg">
+                    <a class="navbar-brand" href="../index.html">Back</a>
+                    <a class="navbar-brand" href="index.html">ToDo List</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="add-content">
+            <div class="container">
+                <div class="">
+                    <div class="form-group">
+                        <label for="InputItem">Add An Item</label>
+                        <input type="text" class="form-control" id="InputItem">
+                    </div>
+                    <div class="">
+                        <button type="button" class="btn btn-primary" onclick="addItem()">Update</button>
+                        <button type="button" class="btn btn-danger" onclick="clearItem()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-content">
+            <div class="container">
+                <ul class="list-group list-group-flush" id="todolist-item">
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

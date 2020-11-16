@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BallApp</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script>require('popper.js');</script>
+        <script>require('bootstrap');</script>
+    </head>
+    <body>
+        <div class="controller">
+            <a href="../index.html">Back</a>
+            <input type="number" id="numberBall" value="1" min="1">
+            <button onclick="setBall()">setBall</button>
+            <button onclick="sizeBall()">size+10</button>
+            <button onclick="sizeBall2()">size-10</button>
+            <button onclick="speedBall()">speed</button>
+        </div>
+        <canvas id="canvas"></canvas>
+    </body>
+    <script src="js/script.js"></script>
+</html>

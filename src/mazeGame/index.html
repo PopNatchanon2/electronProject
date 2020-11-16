@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MazeGame</title>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script>require('popper.js');</script>
+        <script>require('bootstrap');</script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="bg-gradient"></div>
+        <div class="page-game">
+            <div class="menu-game">
+                <div class="custom-select-game">
+                    <select id="diffSelect">
+                        <option value="10">Easy</option>
+                        <option value="15">Medium</option>
+                        <option value="25">Hard</option>
+                        <option value="38">Extreme</option>                                      
+                    </select>
+                </div>
+                <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Start" />
+            </div>
+            <div id="view-game">
+                <div id="mazeContainer">
+                    <canvas id="mazeCanvas" class="Canvas-border" height="1100" width="1100"></canvas>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
